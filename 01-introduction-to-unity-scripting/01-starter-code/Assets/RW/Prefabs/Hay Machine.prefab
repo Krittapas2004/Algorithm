@@ -252,11 +252,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4397208863869895446}
     m_Modifications:
-    - target: {fileID: 5233456973075758890, guid: 5c5170d876533ae43bc2e4b15c8e6f6e,
-        type: 3}
-      propertyPath: m_Name
-      value: Hay Machine Blue
-      objectReference: {fileID: 0}
     - target: {fileID: 5233456973076177674, guid: 5c5170d876533ae43bc2e4b15c8e6f6e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -311,6 +306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5233456973075758890, guid: 5c5170d876533ae43bc2e4b15c8e6f6e,
+        type: 3}
+      propertyPath: m_Name
+      value: Hay Machine Blue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5170d876533ae43bc2e4b15c8e6f6e, type: 3}
