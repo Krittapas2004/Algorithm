@@ -21,6 +21,7 @@ public class MazeConstructor : MonoBehaviour
 
     void Awake()
     {
+
         int width = 7;
         int height = 5;
 
@@ -54,5 +55,41 @@ public class MazeConstructor : MonoBehaviour
         }
 
         GUI.Label(new Rect(20, 20, 500, 500), msg);
+    }
+
+    public int[,] GenerateMazeDataFromDimensions(int numRows, int numCols)
+    {
+        int[,] maze = new int[numRows, numCols];
+        float placementThreshold = 0.1f; 
+        for (var x = 0; x < numRows; x++) 
+        {
+            for (var y = 0; y < numCols; y++) 
+            {
+                if (x == 0 || y == 0 || x == numRows - 1 || y == numCols - 1) 
+                {
+                    maze[x, y] = 1; 
+                }
+                else if (x % 2 == 0 && y % 2 == 0) 
+                {
+                    if (Random.value > placementThreshold) 
+                    {
+                        maze[x, y] = 1; 
+
+                        
+                        int delta = Random.value > 0.5f ? -1 : 1;
+                       
+                        int[] offset = new int[2];
+                        
+                        int offsetIndex = Random.value > 0.5f ? 0 : 1;
+                        offset[offsetIndex] = delta;
+
+                        
+                        maze[x + offset[0], y + offset[1]] = 1;
+                    }
+                }
+            }
+        }
+
+        return maze;
     }
 }
