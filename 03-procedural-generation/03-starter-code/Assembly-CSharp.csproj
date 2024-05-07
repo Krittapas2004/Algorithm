@@ -57,6 +57,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\MazeConstructor.cs" />
      <Compile Include="Assets\Scripts\TriggerEventRouter.cs" />
+     <Compile Include="Assets\Scripts\MazeMechGenerator.cs" />
+     <Compile Include="Assets\scri.cs" />
      <Compile Include="Assets\Scripts\FpsMovement.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/chink3/Desktop/Algorithm/03-procedural-generation/03-starter-code/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
